@@ -147,9 +147,8 @@ make_answer_toml() {
     source = "from-dhcp"
 
 [disk-setup]
-    filesystem = "zfs"
-    zfs.raid = "raid1"
-    disk_list = ["/dev/vda", "/dev/vdb"]
+    filesystem = "ext4"
+    disk_list = ["/dev/vda"]
 
 EOF
     echo -e "${CLR_GREEN}answer.toml created.${CLR_RESET}"
